@@ -33,4 +33,17 @@ contract Calculator{
        setResult(getNumberOne()+getNumberTwo());
     }
     
+    function difference() public {
+       setResult(getNumberOne() - getNumberTwo());
+    }
+    
+     function multiplication() public {
+       setResult(getNumberOne() * getNumberTwo());
+    }
+    
+     function divison() public {
+        assert(numberTwo !=0);     
+        setResult(getNumberOne() - getNumberTwo());
+    }
+    
 }
