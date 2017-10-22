@@ -1,6 +1,11 @@
 pragma solidity ^0.4.18;
 
+import "./SafeMath.sol";
+
 contract Calculator{
+    
+    using SafeMath for uint;
+    
     uint numberOne;
     uint numberTwo;
     uint result;
@@ -29,21 +34,20 @@ contract Calculator{
         result = number;
     }
     
-    function add() public {
-       setResult(getNumberOne()+getNumberTwo());
+    function addNumbers() public {
+       result = numberOne.add(numberTwo);
     }
     
-    function difference() public {
-       setResult(getNumberOne() - getNumberTwo());
+    function differenceOfNumbers() public {
+       result = numberOne.sub(numberTwo);
     }
     
      function multiplication() public {
-       setResult(getNumberOne() * getNumberTwo());
+      result = numberOne.mul(numberTwo);
     }
     
      function divison() public {
-        assert(numberTwo !=0);     
-        setResult(getNumberOne() - getNumberTwo());
+      result = numberOne.div(numberTwo);
     }
     
 }
