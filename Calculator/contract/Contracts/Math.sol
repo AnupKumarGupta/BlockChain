@@ -1,7 +1,3 @@
-// All Rights Reserved. Copyright 2017 GLX/DLT Labs
-//This module comes WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
 pragma solidity ^0.4.13;
 
 /**
@@ -9,7 +5,6 @@ pragma solidity ^0.4.13;
  * Purpose: Math operations with safety checks
  * Status : Complete
  */
-
 contract Math {
 
       function mul(uint256 a, uint256 b) internal constant returns (uint256) {
